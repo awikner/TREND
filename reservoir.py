@@ -18,12 +18,7 @@ class reservoir_parameters(object):
 		
 
 
-def generate_reservoir(size, radius, degree):
-	sparsity = degree/size
-	A = sparse.rand(size, size, sparsity)
-	e = np.max(np.abs(lin.eigs(A, k = 6, return_eigenvectors = False)))
-	A = (A/e)*radius
-	return(A.tocsr())
+
 
 def generate_reservoir(size, radius, degree):
 	sparsity = degree/size
@@ -31,6 +26,16 @@ def generate_reservoir(size, radius, degree):
 	e = np.max(np.abs(lin.eigs(A, k = 1, return_eigenvectors = False)))
 	A = (A/e)*radius
 	return(A.tocsr())
+
+
+def generate_input_layer(resparams):
+	q = int(resparams.N/resparams.num_inputs)
+	win = np.zeros((resparams.N, resparams.num_inputs))
+	for i in range(resparams.num_inputs):
+	    ip = resparams.sigma*(-1 + 2*np.random.rand(q,))
+	    win[i*q:(i+1)*q,i] = ip
+
+	return(win)
 
 
 def train_reservoir(resparams, data):
