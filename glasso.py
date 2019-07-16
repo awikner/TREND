@@ -20,13 +20,3 @@ def keras_regressor(X,y, N, lam, num_epochs, bsize, learn_rate):
 
 
 
-class SparseGroupLasso(Regularizer):
-
-    def __init__(self, N, num_groups, lgroup = 1.):
-        self.lgroup = K.cast_to_floatx(lgroup)
-        self.N = N
-        self.num_groups = num_groups
-
-    def __call__(self, x): 
-        xr = K.reshape(x, (-1, self.N/self.num_groups))
-        return(self.lgroup * np.sqrt(K.int_shape(xr)[1])*K.sum(K.sqrt(K.sum(K.square(xr),axis=1))))
