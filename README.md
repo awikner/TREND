@@ -1,5 +1,9 @@
 # TREND
 
-Linear Regression:  https://drive.google.com/open?id=1f8cPqRol-iMTLedp3RN4iDCq0ClXnpdo
+Linear Regression:  https://colab.research.google.com/drive/1mdHn9mZrmIxH_hx1NX9mq73IQ7JdYrEd?usp=sharing
 
-Reservoir Computing: https://drive.google.com/open?id=1TMSU6UYUwNTPMzuI7bExgDzi42quHprA
+Logistic Regression: https://colab.research.google.com/drive/1-s5xMNse1p8qxsp9N2fjp99FV8D4wZmA?usp=sharing
+
+Reservoir Computing: https://colab.research.google.com/drive/1LTq45U0oKXmkd0E_vn2o-N81xhZxKPZT?usp=sharing
+
+LSTM: https://colab.research.google.com/drive/1OMfztGAjWfKeH1BMEh2e9nEmhEPvn8Q_?usp=sharing
