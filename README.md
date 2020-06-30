@@ -1,6 +1,6 @@
 # TREND
 
-Linear Regression:  https://colab.research.google.com/drive/1mdHn9mZrmIxH_hx1NX9mq73IQ7JdYrEd?usp=sharing
+Polynomial Regression:  https://colab.research.google.com/drive/1mdHn9mZrmIxH_hx1NX9mq73IQ7JdYrEd?usp=sharing
 
 Logistic Regression: https://colab.research.google.com/drive/1-s5xMNse1p8qxsp9N2fjp99FV8D4wZmA?usp=sharing
 
